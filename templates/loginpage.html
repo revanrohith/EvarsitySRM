@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SRM Student Portal</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<link rel="stylesheet" type="text/css" href="static/css/utillp.css">
+	<link rel="stylesheet" type="text/css" href="static/css/mainlp.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(static/images/bg-01.jpg);">
+					<span class="login100-form-title-1">
+						Sign In
+					</span>
+				</div>
+
+				<form class="login100-form validate-form" action="/signup" method="post">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<span class="label-input100">Username</span>
+						<input class="input100" type="text" name="us" placeholder="Enter username">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+						<span class="label-input100">Password</span>
+						<input class="input100" type="password" name="ps" placeholder="Enter password">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+						<span class="label-input100">{{log}}</span>
+						<img style="width: 140px; height: 50px;;" class="input100" src="static/captcha.png?xxx={{rval}}" alt="cap">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+						<span class="label-input100">Captcha</span>
+						<input class="input100" type="text" autocomplete="off" name="cp" placeholder="{{ capins }}">
+						<span class="focus-input100"></span>
+
+
+					<div class="container-login100-form-btn">
+						<input type="submit" class="login100-form-btn" value="Login">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+</body>
+</html>
