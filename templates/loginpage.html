@@ -37,25 +37,41 @@
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+					<div class="wrap-input100 validate-input m-b-18" data-validate = "Captcha is required">
 						<span class="label-input100">{{log}}</span>
 						<img style="width: 140px; height: 50px;;" class="input100" src="static/captcha.png?xxx={{rval}}" alt="cap">
 						<span class="focus-input100"></span>
 					</div>
 					
-					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+					<div class="wrap-input200 validate-input m-b-18" >
 						<span class="label-input100">Captcha</span>
 						<input class="input100" type="text" autocomplete="off" name="cp" placeholder="{{ capins }}">
 						<span class="focus-input100"></span>
 
 
 					<div class="container-login100-form-btn">
-						<input type="submit" class="login100-form-btn" value="Login">
+						<input type="submit" id="loginb" onclick="strt()" class="login100-form-btn" value="Login">
+					</div>
+					<div class="container-login100-form-btn">
+						<progress value="0" max="28" style="width: 200px;" id="progressBar"></progress>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
+<script>
+function strt(){
+document.getElementById("loginb").value = "Please Wait...."
+var timeleft = 28;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+  }
+  document.getElementById("progressBar").value = 28 - timeleft;
+  timeleft -= 1;
+}, 1000);
+}
+</script>
 	
 
 </body>
