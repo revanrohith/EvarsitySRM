@@ -41,4 +41,9 @@ git push heroku master
 ## Running the Service
 - After successful deployment, you can run the app by calling `<YOUR_APP_NAME>.herokuapp.com`.
 ### Preview
-![clipsent](https://github.com/revanrohith/SnapPaste/raw/master/uploads/clipsent.png)
+![Login Screen](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/1.png)
+![Content](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/2.png)
+![Content](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/3.png)
+![Content](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/4.png)
+![Content](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/5.png)
+![Content](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/6.png)
