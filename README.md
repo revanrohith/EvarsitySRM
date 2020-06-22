@@ -1,2 +1,2 @@
 # EvarsitySRM
-Revamped with good looking user interface of Evarsity Student Portal of SRM
+Revamped UI for Evarsity Student Portal of SRM
