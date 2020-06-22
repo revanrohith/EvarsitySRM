@@ -1,6 +1,13 @@
 # EvarsitySRM
 - Revamped UI for Evarsity Student Portal of SRM
 - Preview : https://evarsitysrm.herokuapp.com/
+![Login Screen](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/1.png)
+![Content](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/2.png)
+![Content](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/3.png)
+![Content](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/4.png)
+![Content](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/5.png)
+![Content](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/6.png)
+
 ## Deploy in Heroku
 In order to make it work in background we need to deploy it in a server.
 ### Getting Started
@@ -41,10 +48,3 @@ git push heroku master
 - Paste this in terminal or cmd to deploy.
 ## Running the Service
 - After successful deployment, you can run the app by calling `<YOUR_APP_NAME>.herokuapp.com`.
-### Preview
-![Login Screen](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/1.png)
-![Content](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/2.png)
-![Content](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/3.png)
-![Content](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/4.png)
-![Content](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/5.png)
-![Content](https://github.com/revanrohith/EvarsitySRM/raw/master/Screenshots/6.png)
