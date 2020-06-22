@@ -1,5 +1,6 @@
 # EvarsitySRM
 Revamped UI for Evarsity Student Portal of SRM
+Preview : https://evarsitysrm.heroku.app/
 ## Deploy in Heroku
 In order to make it work in background we need to deploy it in a server.
 ### Getting Started
