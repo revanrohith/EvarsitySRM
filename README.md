@@ -40,3 +40,5 @@ git push heroku master
 - Paste this in terminal or cmd to deploy.
 ## Running the Service
 - After successful deployment, you can run the app by calling `<YOUR_APP_NAME>.herokuapp.com`.
+### Preview
+![clipsent](https://github.com/revanrohith/SnapPaste/raw/master/uploads/clipsent.png)
