@@ -3,7 +3,42 @@ import evarsity
 import time
 import os
 import random
+from threading import *
 app = Flask(__name__)
+
+class getinfobg(Thread):
+    def run(self):
+        time.sleep(1)
+        print("Getting Test Performance Status")
+        evarsity.getdatatp()
+        time.sleep(1)
+        print("Getting sem Status")
+        evarsity.getdatasem()
+        time.sleep(1)
+        print("Getting Profile Status")
+        evarsity.getdata()
+        time.sleep(1)
+        print("Getting Subject Status")
+        evarsity.getdatasub()
+        evarsity.driver.execute_script("LogOut()")
+        okk = evarsity.driver.find_element_by_id("okay")
+        okk.click()
+
+fetcher = getinfobg()
+
+class closer(Thread):
+    def run(self):
+        exit()
+
+close= closer()
+
+class autologout(Thread):
+    def run(self):
+        time.sleep(450)
+        exit()
+
+alo = autologout()
+
 
 def errorcheck():
     try:
@@ -50,21 +85,8 @@ def signup():
             evarsity.getdataatt()
             print("Getting Avathar Status")
             evarsity.loadava()
-            time.sleep(1)
-            print("Getting Profile Status")
-            evarsity.getdata()
-            time.sleep(1)
-            print("Getting sem Status")
-            evarsity.getdatasem()
-            time.sleep(1)
-            print("Getting Subject Status")
-            evarsity.getdatasub()
-            time.sleep(1)
-            print("Getting Test Performance Status")
-            evarsity.getdatatp()
-            evarsity.driver.execute_script("LogOut()")
-            okk = evarsity.driver.find_element_by_id("okay")
-            okk.click()
+            fetcher.start()
+            alo.start()
     except:
         print("reached exception")
         pass
@@ -117,5 +139,5 @@ def logout():
         os.remove("./static/captcha.png")
     except:
         pass
-    exit()
-    return redirect('/')
+    close.start()
+    return 'Service Ended'
